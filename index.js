@@ -57,13 +57,18 @@ console.log(objct1);
 
 // Create an object method that prints a message to the console.
 // Define an object with a method that prints a message to the console
-const mymsgObject = {
-    message: "Hello, world!",
-    printMessage: function() {
-      console.log(message);
-    }
-  };
-  myObject.printMessage();
+let Object1 = {
+  name: "Adil",
+  age: "19",
+  area: {
+      country: "Pakistan",
+      city: "Faisalabad"
+  }
+}
+console.log(Object1)
+Object1.area.city="Islamabad"
+console.log(Object1)
+
   
 
 //   Create a method that calculates and returns a value based on object properties.
@@ -120,7 +125,7 @@ console.log(compareObjects(obj1, obj3))
 // Create an object that contains another object as one of its properties.
 // Access and modify properties of a nested object.
 
-object = {
+let object_1 = {
   name: "Hassan",
   age: "19",
   area: {
@@ -128,9 +133,9 @@ object = {
       city: "Faisalabad"
   }
 }
-console.log(object)
-object.area.city="Islamabad"
-console.log(object)
+console.log(object_1)
+object_1.area.city="Islamabad"
+console.log(object_1)
 
 // Create a prototype object and use it to create multiple instances of objects.
 // Add a method to the prototype object and observe its effect on the instances.
@@ -184,15 +189,14 @@ const myObject1 = {
   // Parse a JSON string and convert it back to an object using JSON.parse().
   // Example JSON string
 const jsonString3 = '{"name":"John","age":30,"isStudent":false,"hobbies":["reading","gaming","coding"],"address":{"street":"123 Main St","city":"Anytown","country":"USA"}';
-const object = JSON.parse(jsonString);
-console.log(object);
+const object2 = JSON.parse(jsonString);
+console.log(object2);
 
-console.log(object.name);      
-console.log(object.age);    
-console.log(object.isStudent);  
-console.log(object.hobbies);    
-console.log(object.address);   
-console.log(object.address.city);
+console.log(object2.name);      
+console.log(object2.age);    
+console.log(object2.isStudent);  
+console.log(object2.hobbies);    
+console.log(object2.address);   
 
 // Use object destructuring to extract specific properties from an object.
 // Define a JavaScript object
